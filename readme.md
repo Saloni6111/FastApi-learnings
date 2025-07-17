@@ -33,6 +33,8 @@ This project is a learning exercise using FastAPI to perform CRUD (Create, Read,
 Start the FastAPI server with:
 
 ```bash
+fastapi dev main.py
+'OR'
 uvicorn main:app --reload
 ```
 

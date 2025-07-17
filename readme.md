@@ -53,6 +53,31 @@ uvicorn main:app --reload
 - `PUT /patients/{id}` - Update a patient
 - `DELETE /patients/{id}` - Delete a patient
 
+## (optional) Containerization with Docker
+
+1. **Build the Docker Image**
+```bash
+docker build -t fastapi-patient-api .
+```
+
+2. **Run the Container with a Custom Name and Port Mapping**
+```bash
+docker run --name patient-api-container -p 8000:8000 fastapi-patient-api
+```
+
+- --name patient-api-container gives your container a friendly name.
+- -p 8000:8000 maps your app’s internal port to your host machine.
+
+**To Stop the Running Container, Run:**
+```bash
+docker stop patient-api-container
+```
+
+**To Remove the Container, Run:**
+```bash
+docker rm patient-api-container
+```
+
 ## Notes
 
 - Patient data is stored in `patients.json`.

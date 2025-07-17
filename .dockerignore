@@ -1,0 +1,12 @@
+my_env/
+__pycache__/
+README.md
+
+*.pyc
+*.pyo
+*.log
+.env
+*.sqlite3
+.DS_Store
+.git
+.gitignore
